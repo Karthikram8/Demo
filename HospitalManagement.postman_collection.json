@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "069432d5-eb59-4ad3-b398-e84badcc478c",
+		"name": "Z-HospitalManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43521895",
+		"_collection_link": "https://karthikramprabhakar.postman.co/workspace/Karthikram-Prabhakar's-Workspac~8a49f0a1-8ffd-41ec-8ace-dc4341e1756d/collection/43521895-069432d5-eb59-4ad3-b398-e84badcc478c?action=share&source=collection_link&creator=43521895"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"username\" : \"john\",\n    \"password\" : \"john\",\n    \"role\" : \"DOCTOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/signup Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"username\" : \"john\",\n    \"password\" : \"john\",\n    \"role\" : \"DOCTOR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/token/generate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"john\",\n    \"password\" : \"john\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/token/generate"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/token/generate Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"john\",\n    \"password\" : \"john\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/token/generate"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/doctor/add/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNzQ0Nzc3ODY2LCJpYXQiOjE3NDQ2OTE0NjZ9.zeZqt7YAwRKZFLTOHDWvNGkXyUT6FsO6FX_gyIU9oGU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Smith\",\n  \"speciality\": \"ORTHO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/doctor/add/1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/medical-history/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbW1hIiwiZXhwIjoxNzQ0NzgxOTk2LCJpYXQiOjE3NDQ2OTU1OTZ9.lZ-8rOZ2pizTuAs_eKzYX10EV9lXZL62_Dt4k8FWq6k"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"illness\": \"Osteoarthritis of the Knee\",\n  \"numOfYears\": 4,\n  \"currentMedication\": \"Acetaminophen 1000mg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/medical-history/add"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/patient/add/1/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbW1hIiwiZXhwIjoxNzQ0NzgxOTk2LCJpYXQiOjE3NDQ2OTU1OTZ9.lZ-8rOZ2pizTuAs_eKzYX10EV9lXZL62_Dt4k8FWq6k"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Emma Johnson\",\n  \"age\": 32\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/patient/add/1/1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/appointment/add/1/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlbW1hIiwiZXhwIjoxNzQ0NzgxOTk2LCJpYXQiOjE3NDQ2OTU1OTZ9.lZ-8rOZ2pizTuAs_eKzYX10EV9lXZL62_Dt4k8FWq6k"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"appointmentSchedule\": \"2024-07-18T15:45:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/appointment/add/1/1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/appointment/get-patient-by-doctor/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiZXhwIjoxNzQ0NzgxOTY1LCJpYXQiOjE3NDQ2OTU1NjV9.GiMseVJtRU-2x5y6f9dm4RJu00oezFWCW9L1gjolaUM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/appointment/get-patient-by-doctor/1"
+			},
+			"response": []
+		}
+	]
+}
